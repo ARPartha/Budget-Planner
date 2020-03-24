@@ -20,8 +20,10 @@ public class DynamicViews {
         final EditText editText = new EditText(context);
         int id = 0;
         editText.setId(id);
-        editText.setMinEms(2);
-        editText.setTextColor(Color.rgb(255,255,255));
+        editText.setBackgroundResource(R.drawable.edittextbackground);
+        editText.setMinEms(5); //changes width of the input box
+        editText.setTextColor(Color.rgb(0,0,0));
+        editText.setTextSize(20);
         editText.setInputType(InputType.TYPE_CLASS_TEXT);
 
         return editText;
@@ -32,8 +34,10 @@ public class DynamicViews {
         final EditText editText = new EditText(context);
         int id = 0;
         editText.setId(id);
-        editText.setMinEms(2);
-        editText.setTextColor(Color.rgb(255,255,255));
+        editText.setBackgroundResource(R.drawable.edittextbackground);
+        editText.setMinEms(4);
+        editText.setTextColor(Color.rgb(0,0,0));
+        editText.setTextSize(20);
         editText.setInputType(InputType.TYPE_CLASS_NUMBER);
 
         return editText;

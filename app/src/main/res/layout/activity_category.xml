@@ -4,42 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#372957"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
     tools:context=".Category">
-    
+
     <Button
         android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Enter exepnse category"
+        android:text="@string/enter_expense_category" />
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item"
+        android:layout_gravity="center"
         />
-        <GridLayout
-            android:id="@+id/gridLayout"
-            android:columnCount="2"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/delItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_item"
+        android:layout_gravity="center"
+        />
 
-                <TextView
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="10dp">
 
-                    android:text="Expense Type"
-                    android:padding="20dp"
-                    android:textColor="#000"
-                    />
-                <TextView
+        <TextView
 
-                    android:text="Expense Amount"
-                    android:textColor="#000"
-                    android:padding="20dp"/>
+            android:padding="20dp"
+            android:text="@string/expense_type"
+            android:textSize="20sp"
+            android:textColor="#000" />
 
-        </GridLayout>
-    
-        
+        <TextView
 
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:text="@string/expense_amount"
+            android:textColor="#000" />
 
+    </GridLayout>
 
-    
 
 </LinearLayout>

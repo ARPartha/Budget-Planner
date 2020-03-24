@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Budget Planner</string>
+    <string name="enter_expense_category">Enter exepnse category</string>
+    <string name="expense_type">Expense Type</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="add_item">Add expense item</string>
+    <string name="delete_item">delete expense item</string>
 </resources>
